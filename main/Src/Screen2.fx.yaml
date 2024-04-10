@@ -22,42 +22,47 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Check
-        OnSelect: |
-            =Patch(
-                Users,
-                Defaults(Users),
-                {
-                    Name: txtNameCad.Text,
-                    Wasborn: DataNascCad.SelectedDate,
-                    Phone: Text(txtPhoneCad.Text)
-                }
-            );
-             Notify("Sucesso",NotificationType.Success)
-            /*If(
+        OnSelect: |-
+            =If(
                 !IsBlank(txtNameCad.Text) && 
                 !IsBlank(DataNascCad.SelectedDate) && 
                 !IsBlank(txtPhoneCad.Text) && 
                 !IsBlank(txtEmailCad.Text) && 
                 !IsBlank(txtPasswordCad.Text) && 
-                !IsBlank(txtConfirmPassCad.Text);
-                /* Ação a ser tomada se a condição for verdadeira 
-                Patch(
-                    Users;
-                    Defaults(Users);
-                    {
-                        Name: txtNameCad.Text;
-                        Wasborn: DataNascCad.SelectedDate;
-                        Phone: txtPhoneCad.Text;
-                        Email: txtEmailCad.Text;
-                        Password: txtPasswordCad.Text
-                    }
-                );
-                /* Ação a ser tomada se a condição for falsa
+                !IsBlank(txtConfirmPassCad.Text),
+                /* Ação a ser tomada se a condição for verdadeira*/
+                If(
+                    CountRows(
+                        Filter(
+                            Users,
+                            Phone = txtPhoneCad.Text
+                        )
+                    ) > 0,
+                    // Se o número de telefone já estiver cadastrado, exibir a mensagem de erro
+                    Notify(
+                        "Este número já está cadastrado por outro usuário.",
+                        NotificationType.Error
+                    ),
+                    // Caso contrário, proceder com o Patch para adicionar o novo registro
+                    Patch(
+                        Users,
+                        Defaults(Users),
+                        {
+                            Name: txtNameCad.Text,
+                            Wasborn: DataNascCad.SelectedDate,
+                            Phone: txtPhoneCad.Text,
+                            Email: txtEmailCad.Text,
+                            Password: txtPasswordCad.Text
+                        }
+                    )
+                ),
+                /* Ação a ser tomada se a condição for falsa*/
                 Notify(
-                    "Por favor, preencha todos os campos corretamente.";
+                    "Por favor, preencha todos os campos corretamente.",
                     NotificationType.Error
-                )
-            )*/
+                ),
+                Notify("Teste",NotificationType.Success)
+            )
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
