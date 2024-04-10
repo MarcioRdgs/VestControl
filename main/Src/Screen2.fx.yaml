@@ -1,0 +1,218 @@
+"Screen2 As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+
+    RectQuickActionBar5 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    IconCancel3 As icon.Cancel:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Cancel
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Cancelar item"
+        Width: =88
+        ZIndex: =2
+
+    IconAccept3 As icon.Check:
+        AccessibleLabel: =Self.Tooltip
+        Height: =88
+        Icon: =Icon.Check
+        OnSelect: |
+            =Patch(
+                Users,
+                Defaults(Users),
+                {
+                    Name: txtNameCad.Text,
+                    Wasborn: DataNascCad.SelectedDate,
+                    Phone: Text(txtPhoneCad.Text)
+                }
+            );
+             Notify("Sucesso",NotificationType.Success)
+            /*If(
+                !IsBlank(txtNameCad.Text) && 
+                !IsBlank(DataNascCad.SelectedDate) && 
+                !IsBlank(txtPhoneCad.Text) && 
+                !IsBlank(txtEmailCad.Text) && 
+                !IsBlank(txtPasswordCad.Text) && 
+                !IsBlank(txtConfirmPassCad.Text);
+                /* Ação a ser tomada se a condição for verdadeira 
+                Patch(
+                    Users;
+                    Defaults(Users);
+                    {
+                        Name: txtNameCad.Text;
+                        Wasborn: DataNascCad.SelectedDate;
+                        Phone: txtPhoneCad.Text;
+                        Email: txtEmailCad.Text;
+                        Password: txtPasswordCad.Text
+                    }
+                );
+                /* Ação a ser tomada se a condição for falsa
+                Notify(
+                    "Por favor, preencha todos os campos corretamente.";
+                    NotificationType.Error
+                )
+            )*/
+        PaddingBottom: =22
+        PaddingLeft: =22
+        PaddingRight: =22
+        PaddingTop: =22
+        TabIndex: =0
+        Tooltip: ="Enviar item"
+        Width: =88
+        X: =Parent.Width - Self.Width
+        ZIndex: =3
+
+    LblAppName5 As label:
+        Height: =88
+        Size: =27
+        Text: ="Novo usuário"
+        Width: =Parent.Width - IconCancel3.Width - IconAccept3.Width
+        Wrap: =false
+        X: =IconCancel3.X + IconCancel3.Width
+        ZIndex: =4
+
+    LabelNameComplet As label:
+        Height: =70
+        Size: =21
+        Text: ="Nome Completo"
+        Width: =560
+        X: =40
+        Y: =88
+        ZIndex: =5
+
+    txtNameCad As text:
+        Default: =""
+        Height: =70
+        HintText: ="Nome Completo"
+        OnChange: =Set(visible, false)
+        OnSelect: =Set(visible, true)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =21
+        Width: =560
+        X: =40
+        Y: =170
+        ZIndex: =6
+
+    LabelDtNascCad As label:
+        Height: =70
+        Size: =21
+        Text: ="Data de Nascimento"
+        Width: =560
+        X: =40
+        Y: =251
+        ZIndex: =7
+
+    DataNascCad As datepicker:
+        Height: =70
+        Size: =24
+        Width: =560
+        X: =40
+        Y: =321
+        ZIndex: =8
+
+    LabelPhoneCad As label:
+        Height: =70
+        Size: =21
+        Text: ="Telefone"
+        Width: =560
+        X: =40
+        Y: =407
+        ZIndex: =9
+
+    txtPhoneCad As text:
+        Default: =""
+        Format: =TextFormat.Number
+        Height: =70
+        HintText: ="42999999999"
+        OnSelect: =Set(visible, true)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =21
+        Width: =560
+        X: =40
+        Y: =489
+        ZIndex: =10
+
+    LabelEmailCad As label:
+        Height: =70
+        Size: =21
+        Text: ="Email"
+        Width: =560
+        X: =40
+        Y: =571
+        ZIndex: =11
+
+    txtEmailCad As text:
+        Default: =""
+        Height: =70
+        HintText: ="Insira seu email"
+        OnSelect: =Set(visible, true)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =21
+        Width: =560
+        X: =40
+        Y: =653
+        ZIndex: =12
+
+    LabelPasswordCad As label:
+        Height: =70
+        Size: =21
+        Text: ="Senha"
+        Width: =560
+        X: =40
+        Y: =743
+        ZIndex: =13
+
+    txtPasswordCad As text:
+        Default: =""
+        Height: =70
+        HintText: ="Insira uma senha"
+        OnSelect: =Set(visible, true)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =21
+        Width: =560
+        X: =40
+        Y: =825
+        ZIndex: =14
+
+    LabelConfirmPassCad As label:
+        Height: =70
+        Size: =21
+        Text: ="Confirme de senha"
+        Width: =560
+        X: =40
+        Y: =911
+        ZIndex: =15
+
+    txtConfirmPassCad As text:
+        Default: =""
+        Height: =70
+        HintText: ="Insira uma senha"
+        OnSelect: =Set(visible, true)
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Size: =21
+        Width: =560
+        X: =40
+        Y: =993
+        ZIndex: =16
+
