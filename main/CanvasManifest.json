@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromData",
-    "AppDescription": "",
+    "AppDescription": "Tela de Login criada",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
@@ -139,6 +139,6 @@
     "Tela_Move",
     "Tela_Detail",
     "Tela_Edit",
-    "Screen2"
+    "Tela_CadUser"
   ]
 }

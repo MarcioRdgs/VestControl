@@ -102,6 +102,7 @@
         HoverBorderColor: =
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =
+        OnSelect: =Navigate(Tela_CadUser, ScreenTransition.CoverRight)
         PressedColor: =RGBA(0, 0, 0, 1)
         PressedFill: =
         Size: =24
