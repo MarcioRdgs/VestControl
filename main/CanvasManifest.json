@@ -137,6 +137,7 @@
   "ScreenOrder": [
     "Tela_Move",
     "Tela_Detail",
-    "Tela_Edit"
+    "Tela_Edit",
+    "Tela_Login"
   ]
 }

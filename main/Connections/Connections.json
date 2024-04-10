@@ -10,12 +10,16 @@
         "dataSources": {
           "Movimentacoes": {
             "tableName": "0467f582-299b-4030-9a6b-f8beef5fbeb4"
+          },
+          "Users": {
+            "tableName": "5e4ec1bd-d7f7-4a01-b770-030bd92c82d4"
           }
         }
       }
     },
     "dataSources": [
-      "Movimentacoes"
+      "Movimentacoes",
+      "Users"
     ],
     "dependencies": {},
     "dependents": [],

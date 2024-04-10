@@ -1,0 +1,114 @@
+"Tela_Login As screen.'phoneLayout_Email_ver3.0'":
+
+    rotuloEmail As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Email:"
+        Width: =Parent.Width - 90
+        X: =45
+        Y: =198
+        ZIndex: =2
+
+    rotuloPassword As label:
+        Height: =70
+        Size: =21
+        Text: |-
+            ="Senha:"
+        Width: =Parent.Width - 90
+        X: =45
+        Y: =378
+        ZIndex: =3
+
+    txtEmail As text:
+        Default: =
+        Height: =70
+        HintText: ="Digite seu email"
+        OnChange: |-
+            =// Verifica se o email existe na base de dados quando o texto é alterado
+            If(
+                IsBlank(LookUp(Users, Email = txtEmail.Text)),
+                // Se o email não for encontrado, mostra uma mensagem de erro
+                Notify("O email não está registrado", NotificationType.Error)
+            )
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =21
+        Width: =Parent.Width - 90
+        X: =45
+        Y: =268
+        ZIndex: =4
+
+    txtPassword As text:
+        Default: =
+        Height: =70
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =21
+        Width: =Parent.Width - 90
+        X: =45
+        Y: =448
+        ZIndex: =5
+
+    btnLogin As button:
+        Height: =70
+        OnSelect: |
+            =// Verifica se o email e senha estão na lista do SharePoint
+            If(
+                IsBlank(LookUp(Users, Email = txtEmail.Text && Password = txtPassword.Text)),
+                // Se não for encontrado, mostra uma mensagem de erro
+                Notify("Email ou senha incorretos", NotificationType.Error),
+                // Se for encontrado, navega para a tela inicial
+                Navigate(Tela_Move, ScreenTransition.None)
+            )
+        Size: =24
+        Text: ="Login"
+        Width: =300
+        X: =170
+        Y: =559
+        ZIndex: =6
+
+    btnLostPassword As button:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =70
+        HoverBorderColor: =
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =
+        Size: =24
+        Text: ="Esqueceu sua senha?"
+        Underline: =true
+        Width: =Parent.Width - 200
+        X: =100
+        Y: =655
+        ZIndex: =7
+
+    btnSignIn As button:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =70
+        HoverBorderColor: =
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =
+        Size: =24
+        Text: ="Cadastrar-se"
+        Underline: =true
+        Width: =Parent.Width - 300
+        X: =150
+        Y: =725
+        ZIndex: =8
+

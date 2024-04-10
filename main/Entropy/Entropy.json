@@ -7,6 +7,9 @@
     "Aplicação_DataCard2": 77,
     "App": 1,
     "Body1": 19,
+    "btnLogin": 212,
+    "btnLostPassword": 213,
+    "btnSignIn": 214,
     "DataCardKey1": 35,
     "DataCardKey10": 68,
     "DataCardKey11": 73,
@@ -74,6 +77,8 @@
     "RectQuickActionBar3": 29,
     "Referencia_DataCard1": 40,
     "Referencia_DataCard2": 67,
+    "rotuloEmail": 208,
+    "rotuloPassword": 209,
     "SAP_DataCard1": 43,
     "SAP_DataCard2": 72,
     "SearchIcon1": 13,
@@ -92,15 +97,18 @@
     "Subtitle1": 18,
     "Tela_Detail": 5,
     "Tela_Edit": 6,
+    "Tela_Login": 169,
     "Tela_Move": 4,
     "TextSearchBox1": 12,
     "Tipo de Movimentação_DataCard1": 52,
     "Tipo de Movimentação_DataCard2": 87,
-    "Title1": 17
+    "Title1": 17,
+    "txtEmail": 210,
+    "txtPassword": 211
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/09/2024 23:37:52",
+  "HeaderLastSavedDateTimeUTC": "04/10/2024 01:21:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "5e716b46-ee33-4a28-8879-60a3387755e6": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/9f2078c3c5c64d3dad52cee13d1666b5\"",
@@ -116,6 +124,7 @@
     "ComboBoxSample": 3,
     "CustomGallerySample": 2,
     "Movimentacoes": 1,
+    "Users": 4,
     "UsuáriosdoOffice365": 0
   },
   "OrderGroupControls": {},
@@ -123,6 +132,7 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "attachments": 8,
+    "button": 9,
     "combobox": 6,
     "form": 7,
     "formViewer": 5,
@@ -138,6 +148,9 @@
     "Aplicação_DataCard2": {},
     "App": {},
     "Body1": {},
+    "btnLogin": {},
+    "btnLostPassword": {},
+    "btnSignIn": {},
     "DataCardKey1": {},
     "DataCardKey10": {},
     "DataCardKey11": {},
@@ -205,6 +218,8 @@
     "RectQuickActionBar3": {},
     "Referencia_DataCard1": {},
     "Referencia_DataCard2": {},
+    "rotuloEmail": {},
+    "rotuloPassword": {},
     "SAP_DataCard1": {},
     "SAP_DataCard2": {},
     "SearchIcon1": {},
@@ -223,11 +238,14 @@
     "Subtitle1": {},
     "Tela_Detail": {},
     "Tela_Edit": {},
+    "Tela_Login": {},
     "Tela_Move": {},
     "TextSearchBox1": {},
     "Tipo de Movimentação_DataCard1": {},
     "Tipo de Movimentação_DataCard2": {},
-    "Title1": {}
+    "Title1": {},
+    "txtEmail": {},
+    "txtPassword": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
@@ -237,6 +255,9 @@
     "Aplicação_DataCard2": 70,
     "App": 0,
     "Body1": 14,
+    "btnLogin": 95,
+    "btnLostPassword": 96,
+    "btnSignIn": 97,
     "DataCardKey1": 23,
     "DataCardKey10": 62,
     "DataCardKey11": 67,
@@ -304,6 +325,8 @@
     "RectQuickActionBar3": 45,
     "Referencia_DataCard1": 28,
     "Referencia_DataCard2": 60,
+    "rotuloEmail": 90,
+    "rotuloPassword": 92,
     "SAP_DataCard1": 31,
     "SAP_DataCard2": 65,
     "SearchIcon1": 6,
@@ -322,11 +345,14 @@
     "Subtitle1": 13,
     "Tela_Detail": 0,
     "Tela_Edit": 0,
+    "Tela_Login": 0,
     "Tela_Move": 0,
     "TextSearchBox1": 5,
     "Tipo de Movimentação_DataCard1": 40,
     "Tipo de Movimentação_DataCard2": 80,
-    "Title1": 11
+    "Title1": 11,
+    "txtEmail": 91,
+    "txtPassword": 94
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
@@ -335,7 +361,11 @@
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0165749,
-    "ControlCount": {}
+    "ControlCount": {
+      "button": 1,
+      "label": 1,
+      "text": 2
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
