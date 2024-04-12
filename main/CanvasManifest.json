@@ -140,6 +140,7 @@
     "Tela_Detail",
     "Tela_Edit",
     "Tela_CadUser",
-    "Tela_Fabricante"
+    "Tela_Fabricante",
+    "Tela_Home"
   ]
 }
