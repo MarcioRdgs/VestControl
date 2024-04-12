@@ -139,6 +139,7 @@
     "Tela_Move",
     "Tela_Detail",
     "Tela_Edit",
-    "Tela_CadUser"
+    "Tela_CadUser",
+    "Tela_Fabricante"
   ]
 }
