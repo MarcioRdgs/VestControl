@@ -8,6 +8,12 @@
     "datasets": {
       "https://4p7mgq.sharepoint.com": {
         "dataSources": {
+          "Estoques": {
+            "tableName": "0f528f98-6958-431b-a6e4-fea6fbdd64eb"
+          },
+          "Fornecedores": {
+            "tableName": "067eab9a-efb2-47bf-a3dd-ba69168c6c6a"
+          },
           "Movimentacoes": {
             "tableName": "0467f582-299b-4030-9a6b-f8beef5fbeb4"
           },
@@ -19,7 +25,9 @@
     },
     "dataSources": [
       "Movimentacoes",
-      "Users"
+      "Users",
+      "Estoques",
+      "Fornecedores"
     ],
     "dependencies": {},
     "dependents": [],
