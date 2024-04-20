@@ -101,7 +101,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 1,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -119,7 +119,7 @@
     "ManualOfflineProfileId": "",
     "Name": "VestControl - Almoxarifado",
     "OriginatingVersion": "1.338",
-    "ParserErrorCount": 2,
+    "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -140,7 +140,6 @@
     "Detalhes",
     "Editar",
     "Novo Usuário",
-    "Saldo Estoque",
-    "Screen4"
+    "Saldo Estoque"
   ]
 }

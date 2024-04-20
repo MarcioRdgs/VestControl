@@ -30,7 +30,7 @@ Home As screen:
         FontColor: =
         FontSize: =35
         Height: =97
-        OnSelect: =Navigate(
+        OnSelect: =Navigate('Saldo Estoque',ScreenTransition.CoverRight)
         Text: ="Estoque"
         Width: =456
         X: =92
