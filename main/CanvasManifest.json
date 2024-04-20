@@ -101,7 +101,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 1,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -140,6 +140,9 @@
     "Detalhes",
     "Editar",
     "Novo Usuário",
-    "Saldo Estoque"
+    "Saldo Estoque",
+    "Fornecedor",
+    "Detalhes Fornecedor",
+    "Novo Fornecedor"
   ]
 }

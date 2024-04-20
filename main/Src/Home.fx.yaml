@@ -1,7 +1,9 @@
 Home As screen:
 
     HeaderHome As Cabeçalho:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =75
         OnSelectLogo: =false
         Title: =App.ActiveScreen.Name
@@ -14,7 +16,9 @@ Home As screen:
         ZIndex: =1
 
     btnMovimentacao As Botão:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         FontSize: =35
         Height: =97
         OnSelect: =Navigate(Movimentações, ScreenTransition.UnCoverRight)

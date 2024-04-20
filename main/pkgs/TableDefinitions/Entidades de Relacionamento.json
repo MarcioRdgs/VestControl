@@ -2,7 +2,7 @@
   "DatasetName": "default.cds",
   "EntityName": "Entidades de Relacionamento",
   "environmentVariableName": "",
-  "InstanceUrl": "https://org7acec345.crm.dynamics.com",
+  "InstanceUrl": "https://org7acec345.crm.dynamics.com/",
   "LocalReferenceDSJson": {
     "entitySetName": "relationships",
     "logicalName": "relationship"

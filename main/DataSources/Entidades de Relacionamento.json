@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "relationship",
+    "MaxGetRowsCount": 500,
     "Name": "Entidades de Relacionamento",
     "NativeCDSDataSourceInfoNameMapping": {
       "cascadearchive": "Configuração de arquivo em cascata",
