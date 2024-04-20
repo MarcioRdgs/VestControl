@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": false,
       "DataflowAnalysisFlagStateToggledByUser": false
     },
-    "DocVersion": "1.338",
+    "DocVersion": "1.339",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -101,7 +101,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 1,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -114,13 +114,12 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "395090d8-5a0a-4677-bf80-88ae14dc2842",
-    "Id": "395090d8-5a0a-4677-bf80-88ae14dc2842",
+    "Id": "6e0eccec-42bf-4c7b-88b0-bf0ca1ed646a",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
     "Name": "VestControl - Almoxarifado",
     "OriginatingVersion": "1.338",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 2,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -135,12 +134,11 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
-    "Tela_Login",
-    "Tela_Move",
-    "Tela_Detail",
-    "Tela_Edit",
-    "Tela_CadUser",
-    "Tela_Fabricante",
-    "Tela_Home"
+    "Home",
+    "Login",
+    "Movimentações",
+    "Detalhes",
+    "Editar",
+    "Novo Usuário"
   ]
 }

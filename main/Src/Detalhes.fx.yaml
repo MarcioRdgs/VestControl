@@ -1,4 +1,4 @@
-"Tela_Detail As screen.'phoneDetailViewLayout_ver3.0'":
+"Detalhes As screen.'phoneDetailViewLayout_ver3.0'":
 
     RectQuickActionBar2 As rectangle:
         Height: =88
@@ -9,7 +9,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.ChevronLeft
-        OnSelect: =Navigate(Tela_Move, ScreenTransition.None)
+        OnSelect: =Navigate(Movimentações, ScreenTransition.None)
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24
@@ -24,7 +24,7 @@
         DisplayMode: =If(DataSourceInfo([@Movimentacoes], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
         Icon: =Icon.Edit
-        OnSelect: =EditForm(FormEdit);Navigate(Tela_Edit, ScreenTransition.None)
+        OnSelect: =EditForm(FormEdit);Navigate(Editar, ScreenTransition.None)
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24
@@ -54,7 +54,7 @@
     LblAppName2 As label:
         Height: =88
         Size: =27
-        Text: ="Movimentacoes"
+        Text: =App.ActiveScreen.Name
         Width: =Parent.Width - Self.X - IconDelete1.Width - IconEdit1.Width
         Wrap: =false
         X: =80

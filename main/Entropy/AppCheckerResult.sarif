@@ -14,12 +14,127 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_CadUser.IconAccept3.OnSelect"
+                  "fullyQualifiedName": "Home.btnEstoque.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_CadUser.IconAccept3.OnSelect",
+                  "fullyQualifiedName": "Home.btnEstoque.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": ""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Home",
+                "type": "Home.btnEstoque"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrOperandExpected",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.btnEstoque.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.btnEstoque.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": ""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Home",
+                "type": "Home.btnEstoque"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Eof",
+              "ParenClose"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Home.btnEstoque.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Home.btnEstoque.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charOffset": 9,
+                  "snippet": {
+                    "text": ""
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Home",
+                "type": "Home.btnEstoque"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Navigate"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrNeedControl-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Novo Usuário'.IconAccept3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Novo Usuário'.IconAccept3.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -32,8 +147,8 @@
               },
               "properties": {
                 "member": "OnSelect",
-                "module": "Tela_CadUser",
-                "type": "Tela_CadUser.IconAccept3"
+                "module": "Novo Usuário",
+                "type": "'Novo Usuário'.IconAccept3"
               }
             }
           ],
@@ -47,26 +162,26 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Move.TextSearchBox1.AccessibleLabel"
+                  "fullyQualifiedName": "'Novo Usuário'.txtNameCad.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Move.TextSearchBox1.AccessibleLabel",
+                  "fullyQualifiedName": "'Novo Usuário'.txtNameCad.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Move",
-                "type": "Tela_Move.TextSearchBox1"
+                "module": "Novo Usuário",
+                "type": "'Novo Usuário'.txtNameCad"
               }
             }
           ],
@@ -77,26 +192,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Move.glrLista.AccessibleLabel"
+                  "fullyQualifiedName": "'Novo Usuário'.DataNascCad.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Move.glrLista.AccessibleLabel",
+                  "fullyQualifiedName": "'Novo Usuário'.DataNascCad.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Move",
-                "type": "Tela_Move.glrLista"
+                "module": "Novo Usuário",
+                "type": "'Novo Usuário'.DataNascCad"
               }
             }
           ],
@@ -107,26 +222,236 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Move.glrLista.TabIndex"
+                  "fullyQualifiedName": "'Novo Usuário'.txtPhoneCad.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Move.glrLista.TabIndex",
+                  "fullyQualifiedName": "'Novo Usuário'.txtPhoneCad.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Novo Usuário",
+                "type": "'Novo Usuário'.txtPhoneCad"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Novo Usuário'.txtEmailCad.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Novo Usuário'.txtEmailCad.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Novo Usuário",
+                "type": "'Novo Usuário'.txtEmailCad"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Novo Usuário'.txtPasswordCad.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Novo Usuário'.txtPasswordCad.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Novo Usuário",
+                "type": "'Novo Usuário'.txtPasswordCad"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Novo Usuário'.txtConfirmPassCad.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Novo Usuário'.txtConfirmPassCad.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Novo Usuário",
+                "type": "'Novo Usuário'.txtConfirmPassCad"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Detalhes.FormDetail.'Tipo de Movimentação_DataCard1'.DataCardValue7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Detalhes.FormDetail.'Tipo de Movimentação_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Detalhes",
+                "type": "Detalhes.FormDetail.'Tipo de Movimentação_DataCard1'.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Movimentações.TextSearchBox1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Movimentações.TextSearchBox1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Movimentações",
+                "type": "Movimentações.TextSearchBox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Movimentações.glrLista.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Movimentações.glrLista.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Movimentações",
+                "type": "Movimentações.glrLista"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Movimentações.glrLista.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Movimentações.glrLista.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "Tela_Move",
-                "type": "Tela_Move.glrLista"
+                "module": "Movimentações",
+                "type": "Movimentações.glrLista"
               }
             }
           ],
@@ -137,26 +462,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_CadUser.txtNameCad.AccessibleLabel"
+                  "fullyQualifiedName": "Login.txtEmail.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_CadUser.txtNameCad.AccessibleLabel",
+                  "fullyQualifiedName": "Login.txtEmail.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_CadUser",
-                "type": "Tela_CadUser.txtNameCad"
+                "module": "Login",
+                "type": "Login.txtEmail"
               }
             }
           ],
@@ -167,26 +492,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_CadUser.DataNascCad.AccessibleLabel"
+                  "fullyQualifiedName": "Login.txtPassword.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_CadUser.DataNascCad.AccessibleLabel",
+                  "fullyQualifiedName": "Login.txtPassword.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_CadUser",
-                "type": "Tela_CadUser.DataNascCad"
+                "module": "Login",
+                "type": "Login.txtPassword"
               }
             }
           ],
@@ -197,26 +522,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_CadUser.txtPhoneCad.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.'Serial Number_DataCard2'.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_CadUser.txtPhoneCad.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.'Serial Number_DataCard2'.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_CadUser",
-                "type": "Tela_CadUser.txtPhoneCad"
+                "module": "Editar",
+                "type": "Editar.FormEdit.'Serial Number_DataCard2'.DataCardValue8"
               }
             }
           ],
@@ -227,26 +552,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_CadUser.txtEmailCad.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.Fabricante_DataCard2.DataCardValue9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_CadUser.txtEmailCad.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.Fabricante_DataCard2.DataCardValue9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_CadUser",
-                "type": "Tela_CadUser.txtEmailCad"
+                "module": "Editar",
+                "type": "Editar.FormEdit.Fabricante_DataCard2.DataCardValue9"
               }
             }
           ],
@@ -257,26 +582,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_CadUser.txtPasswordCad.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.Referencia_DataCard2.DataCardValue10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_CadUser.txtPasswordCad.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.Referencia_DataCard2.DataCardValue10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_CadUser",
-                "type": "Tela_CadUser.txtPasswordCad"
+                "module": "Editar",
+                "type": "Editar.FormEdit.Referencia_DataCard2.DataCardValue10"
               }
             }
           ],
@@ -287,26 +612,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_CadUser.txtConfirmPassCad.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.SAP_DataCard2.DataCardValue11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_CadUser.txtConfirmPassCad.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.SAP_DataCard2.DataCardValue11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_CadUser",
-                "type": "Tela_CadUser.txtConfirmPassCad"
+                "module": "Editar",
+                "type": "Editar.FormEdit.SAP_DataCard2.DataCardValue11"
               }
             }
           ],
@@ -317,26 +642,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Detail.FormDetail.'Tipo de Movimentação_DataCard1'.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.Aplicação_DataCard2.DataCardValue12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Detail.FormDetail.'Tipo de Movimentação_DataCard1'.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.Aplicação_DataCard2.DataCardValue12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Detail",
-                "type": "Tela_Detail.FormDetail.'Tipo de Movimentação_DataCard1'.DataCardValue7"
+                "module": "Editar",
+                "type": "Editar.FormEdit.Aplicação_DataCard2.DataCardValue12"
               }
             }
           ],
@@ -347,26 +672,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Login.txtEmail.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.Depósito_DataCard2.DataCardValue13.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Login.txtEmail.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.Depósito_DataCard2.DataCardValue13.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Login",
-                "type": "Tela_Login.txtEmail"
+                "module": "Editar",
+                "type": "Editar.FormEdit.Depósito_DataCard2.DataCardValue13"
               }
             }
           ],
@@ -377,26 +702,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Login.txtPassword.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.'Tipo de Movimentação_DataCard2'.DataCardValue14.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Login.txtPassword.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.'Tipo de Movimentação_DataCard2'.DataCardValue14.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Login",
-                "type": "Tela_Login.txtPassword"
+                "module": "Editar",
+                "type": "Editar.FormEdit.'Tipo de Movimentação_DataCard2'.DataCardValue14"
               }
             }
           ],
@@ -407,26 +732,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.'Serial Number_DataCard2'.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "Editar.FormEdit.Anexos_DataCard1.DataCardValue15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.'Serial Number_DataCard2'.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "Editar.FormEdit.Anexos_DataCard1.DataCardValue15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.'Serial Number_DataCard2'.DataCardValue8"
+                "module": "Editar",
+                "type": "Editar.FormEdit.Anexos_DataCard1.DataCardValue15"
               }
             }
           ],
@@ -437,26 +762,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Fabricante_DataCard2.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "Component1.DatePicker1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Fabricante_DataCard2.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "Component1.DatePicker1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.Fabricante_DataCard2.DataCardValue9"
+                "module": "Component1",
+                "type": "Component1.DatePicker1"
               }
             }
           ],
@@ -467,26 +792,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Referencia_DataCard2.DataCardValue10.AccessibleLabel"
+                  "fullyQualifiedName": "Home.btnMovimentacao.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Referencia_DataCard2.DataCardValue10.AccessibleLabel",
+                  "fullyQualifiedName": "Home.btnMovimentacao.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.Referencia_DataCard2.DataCardValue10"
+                "module": "Home",
+                "type": "Home.btnMovimentacao"
               }
             }
           ],
@@ -497,26 +822,26 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.SAP_DataCard2.DataCardValue11.AccessibleLabel"
+                  "fullyQualifiedName": "Home.btnEstoque.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.SAP_DataCard2.DataCardValue11.AccessibleLabel",
+                  "fullyQualifiedName": "Home.btnEstoque.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.SAP_DataCard2.DataCardValue11"
+                "module": "Home",
+                "type": "Home.btnEstoque"
               }
             }
           ],
@@ -527,127 +852,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Aplicação_DataCard2.DataCardValue12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Aplicação_DataCard2.DataCardValue12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.Aplicação_DataCard2.DataCardValue12"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Depósito_DataCard2.DataCardValue13.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Depósito_DataCard2.DataCardValue13.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.Depósito_DataCard2.DataCardValue13"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.'Tipo de Movimentação_DataCard2'.DataCardValue14.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.'Tipo de Movimentação_DataCard2'.DataCardValue14.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.'Tipo de Movimentação_DataCard2'.DataCardValue14"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Anexos_DataCard1.DataCardValue15.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Anexos_DataCard1.DataCardValue15.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit.Anexos_DataCard1.DataCardValue15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -677,26 +882,26 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 3
+          "ruleIndex": 6
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Detail.IconDelete1.DisplayMode"
+                  "fullyQualifiedName": "Detalhes.IconDelete1.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Detail.IconDelete1.DisplayMode",
+                  "fullyQualifiedName": "Detalhes.IconDelete1.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
-                "module": "Tela_Detail",
-                "type": "Tela_Detail.IconDelete1"
+                "module": "Detalhes",
+                "type": "Detalhes.IconDelete1"
               }
             }
           ],
@@ -707,26 +912,26 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
+          "ruleIndex": 7
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Detail.FormDetail.Item"
+                  "fullyQualifiedName": "Detalhes.FormDetail.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Detail.FormDetail.Item",
+                  "fullyQualifiedName": "Detalhes.FormDetail.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
-                "module": "Tela_Detail",
-                "type": "Tela_Detail.FormDetail"
+                "module": "Detalhes",
+                "type": "Detalhes.FormDetail"
               }
             }
           ],
@@ -737,26 +942,26 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
+          "ruleIndex": 7
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Item"
+                  "fullyQualifiedName": "Editar.FormEdit.Item"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Tela_Edit.FormEdit.Item",
+                  "fullyQualifiedName": "Editar.FormEdit.Item",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Item",
-                "module": "Tela_Edit",
-                "type": "Tela_Edit.FormEdit"
+                "module": "Editar",
+                "type": "Editar.FormEdit"
               }
             }
           ],
@@ -767,7 +972,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
+          "ruleIndex": 7
         }
       ],
       "tool": {
@@ -775,6 +980,54 @@
           "fullName": "PowerApps app checker",
           "name": "PowerApps app checker",
           "rules": [
+            {
+              "id": "app-ErrOperandExpected",
+              "messageStrings": {
+                "issue": {
+                  "text": "Expected an operand. The formula or expression expects a valid operand. For example, you can add the operand '2' to the expression ' 1 +_' so that the result is '3'. Or, you can add the operand \"there\" to the expression '\"Hi \"& _ ' so that the result is 'Hi there'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Supply an operand value that will complete the expression. Ensure that the operand's type (text, number, date, or true/false) fits the expression. Match numbers with numbers, text with text, and so on. For example, '1 + \"Hi\"' isn't valid, but '1 + 2' is valid."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrExpectedFound-Ex-Fnd",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unexpected characters. The formula contains '{0}' where '{1}' is expected."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove or replace the unexpected characters with an expected character."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrNeedControl-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "The first argument of '{0}' should be a control or screen."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
             {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
               "messageStrings": {
@@ -863,7 +1116,7 @@
               }
             }
           ],
-          "version": "1.338"
+          "version": "1.339"
         }
       }
     }

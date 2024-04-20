@@ -2,7 +2,7 @@ App As appinfo:
     BackEnabled: =true
     ConfirmExit: =true
     ConfirmExitMessage: ="Tem certeza que deseja sair?"
-    OnStart: =Tela_Login
+    OnStart: =Login
     Theme: =PlatinumTheme
 
     Host As hostControl.DefaultHostControlVariant:

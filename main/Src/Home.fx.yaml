@@ -1,0 +1,39 @@
+Home As screen:
+
+    HeaderHome As Cabeçalho:
+        DisplayMode: =DisplayMode.Edit
+        Height: =75
+        OnSelectLogo: =false
+        Title: =App.ActiveScreen.Name
+        UserEmail: =User().Email
+        UserImage: =User().Image
+        UserName: =User().FullName
+        Width: =Parent.Width
+        X: =0
+        Y: =40
+        ZIndex: =1
+
+    btnMovimentacao As Botão:
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =35
+        Height: =97
+        OnSelect: =Navigate(Movimentações, ScreenTransition.UnCoverRight)
+        Text: ="Movimentações"
+        Width: =456
+        X: =92
+        Y: =317
+        ZIndex: =2
+
+    btnEstoque As Botão:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        FontSize: =35
+        Height: =97
+        OnSelect: =Navigate(
+        Text: ="Estoque"
+        Width: =456
+        X: =92
+        Y: =447
+        ZIndex: =3
+

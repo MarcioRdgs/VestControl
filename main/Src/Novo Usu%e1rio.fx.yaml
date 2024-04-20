@@ -1,4 +1,4 @@
-"Tela_CadUser As screen.'phoneLayout_HeaderAndForm_ver3.0'":
+"'Novo Usuário' As screen.'phoneLayout_HeaderAndForm_ver3.0'":
 
     RectQuickActionBar5 As rectangle:
         Height: =88
@@ -62,10 +62,11 @@
                 Notify(
                     "Por favor, preencha todos os campos corretamente.",
                     NotificationType.Error
-                ),
-                Notify("Teste",NotificationType.Success)
+                )
+                
             );
-            Navigate(Tela_Login , ScreenTransition.Cover)
+            Notify("Usuário Cadastrado com Sucesso, você será redirecionado para tela de login!", NotificationType.Success);
+            Navigate(Login , ScreenTransition.Cover)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
@@ -79,7 +80,7 @@
     LblAppName5 As label:
         Height: =88
         Size: =27
-        Text: ="Novo usuário"
+        Text: =App.ActiveScreen.Name
         Width: =Parent.Width - IconCancel3.Width - IconAccept3.Width
         Wrap: =false
         X: =IconCancel3.X + IconCancel3.Width
@@ -141,6 +142,7 @@
         Format: =TextFormat.Number
         Height: =70
         HintText: ="42999999999"
+        MaxLength: =11
         OnSelect: =Set(visible, true)
         RadiusBottomLeft: =30
         RadiusBottomRight: =30

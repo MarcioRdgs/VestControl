@@ -1,4 +1,4 @@
-"Tela_Login As screen.'phoneLayout_Email_ver3.0'":
+"Login As screen.'phoneLayout_Email_ver3.0'":
 
     rotuloEmail As label:
         Height: =70
@@ -63,7 +63,7 @@
                 // Se não for encontrado, mostra uma mensagem de erro
                 Notify("Email ou senha incorretos", NotificationType.Error),
                 // Se for encontrado, navega para a tela inicial
-                Navigate(Tela_Move, ScreenTransition.None)
+                Navigate(Home, ScreenTransition.None)
             )
         Size: =24
         Text: ="Login"
@@ -102,7 +102,7 @@
         HoverBorderColor: =
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =
-        OnSelect: =Navigate(Tela_CadUser, ScreenTransition.CoverRight)
+        OnSelect: =Navigate('Novo Usuário', ScreenTransition.CoverRight)
         PressedColor: =RGBA(0, 0, 0, 1)
         PressedFill: =
         Size: =24
