@@ -34,7 +34,7 @@
         Tooltip: ="Enviar item"
         Visible: =!abrebtnSalvar
         Width: =88
-        X: =Parent.Width - Self.Width
+        X: =464
         ZIndex: =3
 
     LblAppName7 As label:
@@ -626,7 +626,6 @@
         PaddingTop: =22
         TabIndex: =0
         Tooltip: ="Enviar item"
-        Visible: =!!abrebtnSalvar
         Width: =88
         X: =552
         ZIndex: =6
@@ -635,7 +634,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Edit
-        OnSelect: =ViewForm(ViewForm)
+        OnSelect: =EditForm(ViewForm)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
