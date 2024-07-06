@@ -3,6 +3,7 @@ App As appinfo:
     ConfirmExit: =true
     ConfirmExitMessage: ="Tem certeza que deseja sair?"
     OnStart: =Login
+    StartScreen: =
     Theme: =PlatinumTheme
 
     Host As hostControl.DefaultHostControlVariant:

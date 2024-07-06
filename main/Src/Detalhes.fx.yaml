@@ -73,7 +73,7 @@
             DataField: ="Title"
             Default: =ThisItem.'Serial Number'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,"Title")
+            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,'Serial Number')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -111,7 +111,7 @@
             DataField: ="field_1"
             Default: =ThisItem.Fabricante
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,"field_1")
+            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,Fabricante)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -149,7 +149,7 @@
             DataField: ="field_2"
             Default: =ThisItem.Referencia
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,"field_2")
+            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,Referencia)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -187,7 +187,7 @@
             DataField: ="field_3"
             Default: =ThisItem.SAP
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,"field_3")
+            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,SAP)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -225,7 +225,7 @@
             DataField: ="field_4"
             Default: =ThisItem.Aplicação
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,"field_4")
+            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,Aplicação)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -263,7 +263,7 @@
             DataField: ="field_5"
             Default: =ThisItem.Depósito
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,"field_5")
+            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,Depósito)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -301,7 +301,7 @@
             DataField: ="TypeMove"
             Default: =ThisItem.'Tipo de Movimentação'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,"TypeMove")
+            DisplayName: =DataSourceInfo([@Movimentacoes],DataSourceInfo.DisplayName,'Tipo de Movimentação')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -328,10 +328,10 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@Movimentacoes].TypeMove)
+                Items: =Choices([@Movimentacoes].'Tipo de Movimentação')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices(Movimentacoes.TypeMove,DataCardValue7.SearchText)
+                SearchItems: =Choices(Movimentacoes.'Tipo de Movimentação',DataCardValue7.SearchText)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60

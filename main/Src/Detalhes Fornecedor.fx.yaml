@@ -60,10 +60,10 @@
             DataField: ="Fornecedor"
             Default: =ThisItem.Fornecedor
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"Fornecedor")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Fornecedor)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, "Fornecedor")
+            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, Fornecedor)
             Required: =false
             Update: =DataCardFornecedor.Text
             Width: =640
@@ -133,10 +133,10 @@
             DataField: ="CEP"
             Default: =ThisItem.CEP
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"CEP")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,CEP)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, "CEP")
+            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, CEP)
             Required: =false
             Update: =DataCardCEP.Text
             Width: =640
@@ -206,10 +206,10 @@
             DataField: ="Endere_x00e7_o"
             Default: =ThisItem.Endereço
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"Endere_x00e7_o")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Endereço)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, "Endere_x00e7_o")
+            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, Endereço)
             Required: =false
             Update: =DataCardEndereco.Text
             Width: =640
@@ -279,7 +279,7 @@
             DataField: ="N_x00fa_mero"
             Default: =ThisItem.Número
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"N_x00fa_mero")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Número)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
@@ -351,10 +351,10 @@
             DataField: ="Bairro"
             Default: =ThisItem.Bairro
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"Bairro")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Bairro)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, "Bairro")
+            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, Bairro)
             Required: =false
             Update: =DataCardBairro.Text
             Width: =640
@@ -424,10 +424,10 @@
             DataField: ="Cidade"
             Default: =ThisItem.Cidade
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"Cidade")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Cidade)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, "Cidade")
+            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, Cidade)
             Required: =false
             Update: =DataCardCidade.Text
             Width: =640
@@ -497,7 +497,7 @@
             DataField: ="Estado"
             Default: =ThisItem.Estado
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"Estado")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Estado)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =145
             Required: =true
@@ -531,6 +531,7 @@
 
             DataCardEstado As dropdown:
                 Default: =ThisItem.Estado.Value
+                DisplayMode: =Parent.DisplayMode
                 Height: =70
                 Items: =Choices(Fornecedores.Estado)
                 Size: =21
@@ -544,10 +545,10 @@
             DataField: ="Telefone"
             Default: =ThisItem.Telefone
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,"Telefone")
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Telefone)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, "Telefone")
+            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, Telefone)
             Required: =true
             Update: =DataCardTelefone.Text
             Width: =640
@@ -617,22 +618,7 @@
         Height: =88
         Icon: =Icon.Save
         OnSelect: |-
-            =Update(
-                Fornecedores,
-                galeriaFornecedor.Selected,
-                {
-                    Fornecedor: DataCardFornecedor.Text,
-                    CEP: DataCardCEP.Text,
-                    Endereço: DataCardEndereco.Text,
-                    Número: DataCardNumero.Text,
-                    Bairro: DataCardBairro.Text,
-                    Cidade: DataCardCidade.Text,
-                    Estado: DataCardEstado.Selected.Value,
-                    Telefone: DataCardTelefone.Text
-                }
-            );
-            
-            
+            =SubmitForm(ViewForm);
             Set(abrebtnSalvar, false)
         PaddingBottom: =22
         PaddingLeft: =22
@@ -645,19 +631,17 @@
         X: =552
         ZIndex: =6
 
-    btnSalvar_1 As icon.Check:
+    btnEditarForn As icon.Check:
         AccessibleLabel: =Self.Tooltip
         Height: =88
-        Icon: =Icon.Check
-        OnSelect: |-
-            =SubmitForm(ViewForm);
-            ViewForm(ViewForm)
+        Icon: =Icon.Edit
+        OnSelect: =ViewForm(ViewForm)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
         PaddingTop: =22
         TabIndex: =0
-        Tooltip: ="Enviar item"
+        Tooltip: ="Editar"
         Visible: =!!abrebtnSalvar
         Width: =88
         X: =464

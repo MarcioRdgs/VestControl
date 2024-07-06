@@ -96,9 +96,10 @@
         ZIndex: =8
 
     "glrLista As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtrada"
         DelayItemLoading: =true
         Height: =Parent.Height - Self.Y
-        Items: =SortByColumns(Filter([@Movimentacoes], StartsWith(Title, TextSearchBox1.Text)), "Title")
+        Items: =SortByColumns(Filter([@Movimentacoes], StartsWith('Serial Number', TextSearchBox1.Text)), "Title")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(Detalhes, ScreenTransition.None)
