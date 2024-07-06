@@ -283,7 +283,7 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
-            Update: =Value(DataCardNumero.Text)
+            Update: =DataCardNumero.Text
             Width: =640
             X: =0
             Y: =3
@@ -617,9 +617,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Save
-        OnSelect: |-
-            =SubmitForm(ViewForm);
-            Set(abrebtnSalvar, false)
+        OnSelect: =SubmitForm(ViewForm)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22

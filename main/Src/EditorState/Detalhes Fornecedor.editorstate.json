@@ -695,14 +695,7 @@
         "FocusedBorderColor",
         "ZIndex",
         "AutoDisableOnSelect",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "SubmitForm(ViewForm)",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "OnSelect",
         "PaddingLeft",
         "PaddingRight",
         "PaddingTop",
@@ -8926,8 +8919,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Value(DataCardNumero.Text)",
           "InvariantPropertyName": "Update",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -8978,7 +8971,7 @@
         {
           "Category": "Data",
           "PropertyName": "Update",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
