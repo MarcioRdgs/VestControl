@@ -24,7 +24,7 @@
         DisplayMode: =If(DataSourceInfo([@Movimentacoes], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
         Icon: =Icon.Edit
-        OnSelect: =EditForm(FormEdit);Navigate(Editar, ScreenTransition.None)
+        OnSelect: =EditForm(formEditMov);Navigate(Editar, ScreenTransition.None)
         PaddingBottom: =24
         PaddingLeft: =24
         PaddingRight: =24

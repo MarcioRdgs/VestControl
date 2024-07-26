@@ -9,7 +9,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Cancel
-        OnSelect: =ResetForm(FormEdit);Back()
+        OnSelect: =ResetForm(formEditMov);Back()
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
@@ -23,7 +23,7 @@
         AccessibleLabel: =Self.Tooltip
         Height: =88
         Icon: =Icon.Check
-        OnSelect: =SubmitForm(FormEdit)
+        OnSelect: =SubmitForm(formEditMov)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22
@@ -44,9 +44,9 @@
         X: =80
         ZIndex: =4
 
-    FormEdit As form:
+    formEditMov As form:
         DataSource: =[@Movimentacoes]
-        Height: =Parent.Height - FormEdit.Y
+        Height: =Parent.Height - formEditMov.Y
         Item: =glrLista.Selected
         OnSuccess: =Back()
         Width: =Parent.Width
