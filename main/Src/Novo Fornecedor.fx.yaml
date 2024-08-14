@@ -720,10 +720,14 @@
         ZIndex: =7
 
         "Spinner1 As 'Controle giratório'":
+            BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            FontColor: =
             Height: =Parent.Height
             Label: ="Aguarde! Estamos salvando os dados."
+            SpinnerColor: =
             SpinnerSize: ='Spinner.SpinnerSize'.Huge
+            TrackColor: =
             Width: =Parent.Width
             X: =0
             Y: =0

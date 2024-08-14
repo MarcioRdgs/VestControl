@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": false,
       "DataflowAnalysisFlagStateToggledByUser": false
     },
-    "DocVersion": "1.342",
+    "DocVersion": "1.343",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -101,7 +101,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 1,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -136,11 +136,9 @@
   },
   "ScreenOrder": [
     "Home",
-    "Login",
     "Movimentações",
     "Detalhes",
     "Editar",
-    "Novo Usuário",
     "Saldo Estoque",
     "Fornecedor",
     "Detalhes Fornecedor",

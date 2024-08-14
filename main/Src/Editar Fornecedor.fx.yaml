@@ -206,10 +206,10 @@
             DataField: ="Endere_x00e7_o"
             Default: =ThisItem.Endereço
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Endere_x00e7_o)
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Endereço)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, Endere_x00e7_o)
+            MaxLength: =DataSourceInfo([@Fornecedores], DataSourceInfo.MaxLength, Endereço)
             Required: =false
             Update: =DataCardValue19.Text
             Width: =639
@@ -279,7 +279,7 @@
             DataField: ="N_x00fa_mero"
             Default: =ThisItem.Número
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,N_x00fa_mero)
+            DisplayName: =DataSourceInfo([@Fornecedores],DataSourceInfo.DisplayName,Número)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =true
