@@ -107,17 +107,19 @@ Home As screen:
             ZIndex: =2
 
             ButtonCanvas2 As Botão:
+                Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
-                BorderRadiusBottomLeft: =10
-                BorderRadiusBottomRight: =10
-                BorderRadiusTopLeft: =10
-                BorderRadiusTopRight: =10
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =25
+                FontSize: =32
                 Height: =Parent.Height / 6
                 Icon: ="ArrowSync"
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
+                PaddingLeft: =30
                 Text: ="Movimentações"
                 Width: =400
                 X: =0
@@ -125,17 +127,19 @@ Home As screen:
                 ZIndex: =1
 
             ButtonCanvas3 As Botão:
+                Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
-                BorderRadiusBottomLeft: =10
-                BorderRadiusBottomRight: =10
-                BorderRadiusTopLeft: =10
-                BorderRadiusTopRight: =10
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =25
+                FontSize: =32
                 Height: =Parent.Height / 6
                 Icon: ="Search"
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
+                PaddingLeft: =30
                 Text: ="Saldo de estoque"
                 Width: =400
                 X: =0
@@ -143,17 +147,19 @@ Home As screen:
                 ZIndex: =2
 
             ButtonCanvas4 As Botão:
+                Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
-                BorderRadiusBottomLeft: =10
-                BorderRadiusBottomRight: =10
-                BorderRadiusTopLeft: =10
-                BorderRadiusTopRight: =10
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =25
+                FontSize: =32
                 Height: =Parent.Height / 6
                 Icon: ="ServiceBell"
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
+                PaddingLeft: =30
                 Text: ="Consultar Fornecedor"
                 Width: =400
                 X: =0
@@ -161,17 +167,19 @@ Home As screen:
                 ZIndex: =3
 
             ButtonCanvas5 As Botão:
+                Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
-                BorderRadiusBottomLeft: =10
-                BorderRadiusBottomRight: =10
-                BorderRadiusTopLeft: =10
-                BorderRadiusTopRight: =10
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =25
+                FontSize: =32
                 Height: =Parent.Height / 6
                 Icon: ="Add"
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
+                PaddingLeft: =30
                 Text: ="Nova vestimenta"
                 Width: =400
                 X: =0
@@ -179,17 +187,19 @@ Home As screen:
                 ZIndex: =4
 
             ButtonCanvas6 As Botão:
+                Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
-                BorderRadiusBottomLeft: =10
-                BorderRadiusBottomRight: =10
-                BorderRadiusTopLeft: =10
-                BorderRadiusTopRight: =10
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
                 DisplayMode: =DisplayMode.Edit
-                FontSize: =25
+                FontSize: =32
                 Height: =Parent.Height / 6
                 Icon: ="DocumentBulletList"
                 LayoutMinHeight: =32
                 LayoutMinWidth: =96
+                PaddingLeft: =30
                 Text: ="Inventário"
                 Width: =400
                 X: =0
