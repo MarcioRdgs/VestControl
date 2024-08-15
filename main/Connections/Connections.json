@@ -8,6 +8,9 @@
     "datasets": {
       "https://4p7mgq.sharepoint.com": {
         "dataSources": {
+          "Cadastro de Vestimentas": {
+            "tableName": "a1bf2bcd-2cbc-4236-a179-42fc703616d5"
+          },
           "Estoques": {
             "tableName": "0f528f98-6958-431b-a6e4-fea6fbdd64eb"
           },
@@ -27,7 +30,8 @@
       "Movimentacoes",
       "Users",
       "Estoques",
-      "Fornecedores"
+      "Fornecedores",
+      "Cadastro de Vestimentas"
     ],
     "dependencies": {},
     "dependents": [],

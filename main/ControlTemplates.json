@@ -57,19 +57,20 @@
     "TemplateDisplayName": "Botão",
     "Version": "0.0.42"
   },
-  "circle": {
+  "Caixa de Combinação": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/shapes/circle",
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ComboboxCanvas",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
+    "IsPcfControl": true,
     "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
+    "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "circle",
+    "Name": "PowerApps_CoreControls_ComboboxCanvas",
     "OverridableProperties": {},
-    "Version": "2.3.0"
+    "TemplateDisplayName": "Caixa de Combinação",
+    "Version": "0.0.39"
   },
   "combobox": {
     "CustomGroupControlTemplateName": "",
@@ -113,6 +114,21 @@
     "Name": "dropdown",
     "OverridableProperties": {},
     "Version": "2.3.1"
+  },
+  "Entrada de texto": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextInputCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TextInputCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Entrada de texto",
+    "Version": "0.0.41"
   },
   "form": {
     "CustomGroupControlTemplateName": "",
@@ -212,20 +228,6 @@
     "Name": "icon",
     "OverridableProperties": {},
     "Version": "2.5.0"
-  },
-  "image": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/image",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "image",
-    "OverridableProperties": {},
-    "Version": "2.2.3"
   },
   "label": {
     "CustomGroupControlTemplateName": "",

@@ -136,6 +136,7 @@
   },
   "ScreenOrder": [
     "Home",
+    "Nova Vestimenta",
     "Movimentações",
     "Detalhes",
     "Editar",
@@ -143,7 +144,6 @@
     "Fornecedor",
     "Detalhes Fornecedor",
     "Novo Fornecedor",
-    "Editar Fornecedor",
-    "Screen1"
+    "Editar Fornecedor"
   ]
 }
