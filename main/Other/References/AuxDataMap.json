@@ -1,0 +1,3 @@
+{
+  "AppFromDataMetaDataIdsToEntityNameMappings": "{\"%DataSourceName.AFD%\":\"Movimentacoes\",\"%DataSourceValue.AFD%\":\"[@Movimentacoes]\",\"%SortFieldName.AFD%\":\"\\\"Title\\\"\",\"%FilterFieldName.AFD%\":\"Title\",\"%PrimaryNameField.AFD%\":\"\\\"Title\\\"\",\"%PrimaryNameFieldDisplayName.AFD%\":\"'Serial Number'\",\"%SearchFieldName.AFD%\":\"\\\"Title\\\"\",\"%StartsWithFieldName.AFD%\":\"Title\",\"%DeleteConfirmFieldName.AFD%\":\"Title\",\"%SortDescending.AFD%\":\"SortDescending1\",\"%BrowseScreen.AFD%\":\"Tela_Move\",\"%DetailScreen.AFD%\":\"Tela_Detail\",\"%EditScreen.AFD%\":\"Tela_Edit\",\"%BrowseContainer.ID%\":\"glrLista\",\"%DetailEditContainer.ID%\":\"FormEdit\"}"
+}

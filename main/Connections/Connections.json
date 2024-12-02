@@ -1,0 +1,54 @@
+{
+  "5e716b46-ee33-4a28-8879-60a3387755e6": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3676/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://4p7mgq.sharepoint.com": {
+        "dataSources": {
+          "Cadastro de Vestimentas": {
+            "tableName": "a1bf2bcd-2cbc-4236-a179-42fc703616d5"
+          },
+          "Estoques": {
+            "tableName": "0f528f98-6958-431b-a6e4-fea6fbdd64eb"
+          },
+          "Fornecedores": {
+            "tableName": "067eab9a-efb2-47bf-a3dd-ba69168c6c6a"
+          },
+          "Movimentacoes": {
+            "tableName": "0467f582-299b-4030-9a6b-f8beef5fbeb4"
+          },
+          "Users": {
+            "tableName": "5e4ec1bd-d7f7-4a01-b770-030bd92c82d4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Movimentacoes",
+      "Users",
+      "Estoques",
+      "Fornecedores",
+      "Cadastro de Vestimentas"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5e716b46-ee33-4a28-8879-60a3387755e6"
+  },
+  "5fec5c8b-7d22-4308-823d-c9a880be0677": {
+    "connectionRef": {
+      "displayName": "Usuários do Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1677/1.0.1677.3637/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuáriosdoOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5fec5c8b-7d22-4308-823d-c9a880be0677"
+  }
+}

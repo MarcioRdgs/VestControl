@@ -1,0 +1,232 @@
+Home As screen:
+
+    ContainerPrincipal As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =20
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        Width: =Parent.Width
+        ZIndex: =1
+
+        "'Header Container' As groupContainer.horizontalAutoLayoutContainer":
+            Fill: =RGBA(122, 138, 143, 1)
+            FillPortions: =0
+            Height: =64
+            LayoutMinHeight: =64
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =1
+
+            TextCanvas1 As Texto:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FillPortions: =2
+                FontColor: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                PaddingLeft: =5
+                PaddingRight: =10
+                Size: =25
+                Text: ="Tela Inicial"
+                Width: =
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            Container5 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =2
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =64
+                LayoutMinWidth: =120
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =2
+
+                TextCanvas5 As Texto:
+                    BorderColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =
+                    FillPortions: =1
+                    FontColor: =RGBA(255, 255, 255, 1)
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    PaddingLeft: =5
+                    Text: =User().FullName
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                TextCanvas6 As Texto:
+                    BorderColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =
+                    FillPortions: =1
+                    FontColor: =RGBA(255, 255, 255, 1)
+                    Height: =28
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    PaddingLeft: =5
+                    Text: =User().Email
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+            Avatar2 As Avatar:
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =64
+                Image: =User().Image
+                LayoutMinHeight: =64
+                LayoutMinWidth: =64
+                Name: =User().FullName
+                Width: =64
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        BodyContainer As groupContainer.verticalAutoLayoutContainer:
+            Height: =225
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =25
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =20
+            PaddingLeft: =20
+            PaddingRight: =20
+            PaddingTop: =20
+            ZIndex: =2
+
+            ButtonCanvas2 As Botão:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BasePaletteColor: =
+                BorderColor: =
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                FontSize: =32
+                Height: =Parent.Height / 6
+                Icon: ="ArrowSync"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                PaddingLeft: =30
+                Text: ="Movimentações"
+                Width: =400
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            ButtonCanvas3 As Botão:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BasePaletteColor: =
+                BorderColor: =
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                FontSize: =32
+                Height: =Parent.Height / 6
+                Icon: ="Search"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                PaddingLeft: =30
+                Text: ="Saldo de estoque"
+                Width: =400
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            ButtonCanvas4 As Botão:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BasePaletteColor: =
+                BorderColor: =
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                FontSize: =32
+                Height: =Parent.Height / 6
+                Icon: ="ServiceBell"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                PaddingLeft: =30
+                Text: ="Consultar Fornecedor"
+                Width: =400
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+            ButtonCanvas5 As Botão:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BasePaletteColor: =
+                BorderColor: =
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                FontSize: =32
+                Height: =Parent.Height / 6
+                Icon: ="Add"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                OnSelect: =Navigate('Nova Vestimenta', ScreenTransition.None)
+                PaddingLeft: =30
+                Text: ="Nova vestimenta"
+                Width: =400
+                X: =0
+                Y: =0
+                ZIndex: =4
+
+            ButtonCanvas6 As Botão:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BasePaletteColor: =
+                BorderColor: =
+                BorderRadiusBottomLeft: =30
+                BorderRadiusBottomRight: =30
+                BorderRadiusTopLeft: =30
+                BorderRadiusTopRight: =30
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                FontSize: =32
+                Height: =Parent.Height / 6
+                Icon: ="DocumentBulletList"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                PaddingLeft: =30
+                Text: ="Inventário"
+                Width: =400
+                X: =0
+                Y: =0
+                ZIndex: =5
+

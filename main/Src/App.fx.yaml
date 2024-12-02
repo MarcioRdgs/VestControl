@@ -1,0 +1,15 @@
+App As appinfo:
+    BackEnabled: =true
+    ConfirmExit: =true
+    ConfirmExitMessage: ="Tem certeza que deseja sair?"
+    OnStart: =Login
+    StartScreen: =
+    Theme: =PlatinumTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

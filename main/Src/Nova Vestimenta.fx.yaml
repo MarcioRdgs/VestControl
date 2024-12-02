@@ -1,0 +1,700 @@
+"'Nova Vestimenta' As screen":
+    OnVisible: =NewForm(FormNewVest)
+
+    ContainerPrincipal_1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutGap: =20
+        LayoutMode: =LayoutMode.Auto
+        PaddingBottom: =20
+        PaddingLeft: =20
+        PaddingRight: =20
+        PaddingTop: =20
+        Width: =Parent.Width
+        ZIndex: =1
+
+        "'Header Container_1' As groupContainer.horizontalAutoLayoutContainer":
+            Fill: =RGBA(122, 138, 143, 1)
+            FillPortions: =0
+            Height: =64
+            LayoutMinHeight: =64
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =1
+
+            TextCanvas1_1 As Texto:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                Fill: =
+                FillPortions: =2
+                FontColor: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                LayoutMinHeight: =32
+                LayoutMinWidth: =96
+                PaddingLeft: =5
+                PaddingRight: =10
+                Size: =25
+                Text: ="Tela Inicial"
+                Width: =
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+            Container5_1 As groupContainer.verticalAutoLayoutContainer:
+                DropShadow: =DropShadow.None
+                FillPortions: =2
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =64
+                LayoutMinWidth: =120
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =2
+
+                TextCanvas5_1 As Texto:
+                    BorderColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =
+                    FillPortions: =1
+                    FontColor: =RGBA(255, 255, 255, 1)
+                    Height: =32
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    PaddingLeft: =5
+                    Text: =User().FullName
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+                TextCanvas6_1 As Texto:
+                    BorderColor: =
+                    DisplayMode: =DisplayMode.Edit
+                    Fill: =
+                    FillPortions: =1
+                    FontColor: =RGBA(255, 255, 255, 1)
+                    Height: =28
+                    LayoutMinHeight: =32
+                    LayoutMinWidth: =96
+                    PaddingLeft: =5
+                    Text: =User().Email
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =2
+
+            Avatar2_1 As Avatar:
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =
+                Height: =64
+                Image: =User().Image
+                LayoutMinHeight: =64
+                LayoutMinWidth: =64
+                Name: =User().FullName
+                Width: =64
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        OptionsContainer As groupContainer.horizontalAutoLayoutContainer:
+            Fill: =RGBA(214, 221, 224, 0.5)
+            FillPortions: =0
+            Height: =50
+            LayoutGap: =10
+            LayoutMinHeight: =50
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            ZIndex: =2
+
+            Container4 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =225
+                LayoutMinHeight: =40
+                LayoutMinWidth: =
+                PaddingRight: =5
+                ZIndex: =1
+
+                TextCanvas3 As Texto:
+                    DisplayMode: =DisplayMode.Edit
+                    Height: =Parent.Height
+                    PaddingLeft: =5
+                    Text: ="Adicionar nova vestimenta"
+                    Width: =Parent.Width
+                    X: =0
+                    Y: =0
+                    ZIndex: =1
+
+            btnCancelNewVest As Botão:
+                AlignInContainer: =AlignInContainer.Center
+                BasePaletteColor: =RGBA(249, 83, 109, 1)
+                BorderColor: =
+                DisplayMode: =DisplayMode.Edit
+                FillPortions: =0.1
+                FontColor: =
+                Height: =40
+                Icon: ="Dismiss"
+                Layout: ='ButtonCanvas.Layout'.IconOnly
+                LayoutMinHeight: =32
+                LayoutMinWidth: =20
+                OnSelect: =Back()
+                Text: ="Cancelar"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =2
+
+            btnSaveNewVest As Botão:
+                AlignInContainer: =AlignInContainer.Center
+                BasePaletteColor: =RGBA(8, 222, 8, 1)
+                DisplayMode: =DisplayMode.Edit
+                FillPortions: =0.3
+                Height: =40
+                Icon: ="Save"
+                LayoutMinHeight: =32
+                LayoutMinWidth: =50
+                OnSelect: |-
+                    =SubmitForm(FormNewVest);
+                    Notify("Vestimenta Cadastrada com Sucessoe!", NotificationType.Success);
+                    Navigate(Home)
+                Text: ="Salvar"
+                Width: =96
+                X: =0
+                Y: =0
+                ZIndex: =3
+
+        BodyContainer_1 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =225
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =25
+            LayoutMinHeight: =112
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingBottom: =20
+            PaddingLeft: =20
+            PaddingRight: =20
+            PaddingTop: =20
+            ZIndex: =3
+
+            FormNewVest As form.PowerApps_CoreControls_Form:
+                DataSource: ='Cadastro de Vestimentas'
+                DefaultMode: =FormMode.New
+                LayoutMinHeight: =250
+                LayoutMinWidth: =320
+                UseFluentV9Cards: =true
+                Width: =640
+                ZIndex: =2
+
+                "'Serial Number_DataCard4' As typedDataCard.fluentV9TextualEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="Title"
+                    Default: =ThisItem.'Serial Number'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,Title)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Cadastro de Vestimentas'], DataSourceInfo.MaxLength, Title)
+                    Required: =false
+                    Update: =DataCardValue41.Value
+                    Width: =560
+                    X: =0
+                    Y: =0
+                    ZIndex: =3
+
+                    DataCardKey49 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue41 As 'Entrada de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey49.Y + DataCardKey49.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage42 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue41.Y + DataCardValue41.Height
+                        ZIndex: =3
+
+                    StarVisible43 As Texto:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey49.Y
+                        ZIndex: =4
+
+                Manufacturer_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="field_1"
+                    Default: =ThisItem.Fabricante
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,field_1)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Cadastro de Vestimentas'], DataSourceInfo.MaxLength, field_1)
+                    Required: =false
+                    Update: =DataCardValue42.Value
+                    Width: =560
+                    X: =0
+                    Y: =1
+                    ZIndex: =3
+
+                    DataCardKey50 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue42 As 'Entrada de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Visible: =true
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey50.Y + DataCardKey50.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage43 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue42.Y + DataCardValue42.Height
+                        ZIndex: =3
+
+                    StarVisible44 As Texto:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey50.Y
+                        ZIndex: =4
+
+                Reference_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="field_2"
+                    Default: =ThisItem.Referencia
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,field_2)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Cadastro de Vestimentas'], DataSourceInfo.MaxLength, field_2)
+                    Required: =false
+                    Update: =DataCardValue43.Value
+                    Width: =560
+                    X: =0
+                    Y: =2
+                    ZIndex: =3
+
+                    DataCardKey51 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue43 As 'Entrada de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey51.Y + DataCardKey51.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage44 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue43.Y + DataCardValue43.Height
+                        ZIndex: =3
+
+                    StarVisible45 As Texto:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey51.Y
+                        ZIndex: =4
+
+                CodeSAP_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="field_3"
+                    Default: =ThisItem.'Codigo SAP'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,field_3)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Cadastro de Vestimentas'], DataSourceInfo.MaxLength, field_3)
+                    Required: =false
+                    Update: =DataCardValue44.Value
+                    Width: =560
+                    X: =0
+                    Y: =3
+                    ZIndex: =3
+
+                    DataCardKey52 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue44 As 'Entrada de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey52.Y + DataCardKey52.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage45 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue44.Y + DataCardValue44.Height
+                        ZIndex: =3
+
+                    StarVisible46 As Texto:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey52.Y
+                        ZIndex: =4
+
+                Aplication_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="field_4"
+                    Default: =ThisItem.Aplicacao
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,field_4)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Cadastro de Vestimentas'], DataSourceInfo.MaxLength, field_4)
+                    Required: =false
+                    Update: =DataCardValue45.Value
+                    Width: =560
+                    X: =0
+                    Y: =4
+                    ZIndex: =3
+
+                    DataCardKey53 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue45 As 'Entrada de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey53.Y + DataCardKey53.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage46 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue45.Y + DataCardValue45.Height
+                        ZIndex: =3
+
+                    StarVisible47 As Texto:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey53.Y
+                        ZIndex: =4
+
+                ActualPosition_DataCard1 As typedDataCard.fluentV9TextualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="field_5"
+                    Default: =ThisItem.'Posicao Atual'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,field_5)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    MaxLength: =DataSourceInfo([@'Cadastro de Vestimentas'], DataSourceInfo.MaxLength, field_5)
+                    Required: =false
+                    Update: =DataCardValue46.Value
+                    Width: =560
+                    X: =0
+                    Y: =5
+                    ZIndex: =3
+
+                    DataCardKey54 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue46 As 'Entrada de texto'":
+                        AccessibleLabel: =Parent.DisplayName
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                        Required: =Parent.Required
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Value: =Parent.Default
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey54.Y + DataCardKey54.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage47 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue46.Y + DataCardValue46.Height
+                        ZIndex: =3
+
+                    StarVisible48 As Texto:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey54.Y
+                        ZIndex: =4
+
+                TypeMove_DataCard1 As typedDataCard.fluentV9ComboBoxEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="TypeMove"
+                    Default: =ThisItem.Status
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,TypeMove)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =70
+                    Required: =false
+                    Update: =DataCardValue47.Selected
+                    Width: =560
+                    X: =0
+                    Y: =6
+                    ZIndex: =3
+
+                    DataCardKey55 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =22
+                        Text: =Parent.DisplayName
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =Parent.Width - 48
+                        Wrap: =false
+                        X: =24
+                        Y: =10
+                        ZIndex: =1
+
+                    "DataCardValue47 As 'Caixa de Combinação'.pcfdataset":
+                        AccessibleLabel: =If(Parent.Required, Substitute("{0}. Obrigatório.", "{0}", Parent.DisplayName), Parent.DisplayName)
+                        DefaultSelectedItems: =[Parent.Default]
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =32
+                        Items: =Choices([@'Cadastro de Vestimentas'].Status)
+                        ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                        Width: =Parent.Width - 48
+                        X: =24
+                        Y: =DataCardKey55.Y + DataCardKey55.Height + 4
+                        ZIndex: =2
+
+                    ErrorMessage48 As Texto:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =30
+                        Text: =Parent.Error
+                        Visible: =And(!IsBlank(Parent.Error), Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =Parent.Width - 48
+                        Wrap: =true
+                        X: =24
+                        Y: =DataCardValue47.Y + DataCardValue47.Height
+                        ZIndex: =3
+
+                    StarVisible49 As Texto:
+                        Align: ='TextCanvas.Align'.Center
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =20
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        X: =0
+                        Y: =DataCardKey55.Y
+                        ZIndex: =4
+
+                Anexos_DataCard3 As typedDataCard.attachmentsEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="{Attachments}"
+                    Default: =ThisItem.Anexos
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'Cadastro de Vestimentas'],DataSourceInfo.DisplayName,'{Attachments}')
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    Required: =false
+                    Update: =DataCardValue48.Attachments
+                    Width: =560
+                    X: =0
+                    Y: =7
+                    ZIndex: =3
+
+                    DataCardKey56 As label:
+                        AutoHeight: =true
+                        Height: =48
+                        Size: =21
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                        ZIndex: =1
+
+                    DataCardValue48 As attachments:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =520
+                        IsInDataCard: =true
+                        Items: =Parent.Default
+                        PaddingBottom: =5
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        Size: =21
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey56.Y + DataCardKey56.Height + 5
+                        ZIndex: =2
+
+                    ErrorMessage49 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue48.Y + DataCardValue48.Height
+                        ZIndex: =3
+
+                    StarVisible50 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey56.Height
+                        Size: =21
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey56.Y
+                        ZIndex: =4
+
